@@ -35,11 +35,14 @@ run().catch(console.dir);
 
 
 
-
-
 app.get('/', (req, res) => {
     res.send('Hello testing Heroku')
 })
+
+app.get('/users', (req, res) => {
+    res.send('nnnnnnnnnnnnnnnnnnnnnnnn')
+})
+
 
 app.listen(port, () => {
     console.log(`listening at:${port}`);
